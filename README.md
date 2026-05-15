@@ -120,15 +120,7 @@ ng serve
 
 ```
 src/app/
-├── shared/
-│   ├── infrastructure/     ← BaseEndpoint genérico
-│   └── presentation/       ← Layout, PageNotFound
-└── monitoring/             ← Bounded context
-    ├── domain/model/       ← Entidades: Sensor, Alert, Subscription
-    ├── infrastructure/     ← Assemblers (mappers)
-    ├── application/        ← MonitoringService (= store + api)
-    └── presentation/views/ ← Componentes de pantalla
-```
+
 
 ## 🌐 API
 
@@ -140,15 +132,3 @@ Para usar local, edita `src/environments/environment.ts`:
 apiUrl: 'http://localhost:3000'
 ```
 
-## 📋 Rutas
-
-| URL                              | Componente              |
-|----------------------------------|-------------------------|
-| `/monitoring/dashboard`          | DashboardViewComponent  |
-| `/monitoring/sensors`            | SensorListComponent     |
-| `/monitoring/sensors/new`        | SensorFormComponent     |
-| `/monitoring/sensors/:id/edit`   | SensorFormComponent     |
-| `/monitoring/sensors/:id`        | SensorDetailComponent   |
-| `/monitoring/alerts`             | AlertListComponent      |
-| `/monitoring/alerts/resolved`    | AlertResolvedComponent  |
-| `/monitoring/subscription`       | SubscriptionViewComponent|
