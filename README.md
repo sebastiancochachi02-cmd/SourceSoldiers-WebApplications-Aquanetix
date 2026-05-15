@@ -149,6 +149,4 @@ apiUrl: 'http://localhost:3000'
 | `/monitoring/sensors/new`        | SensorFormComponent     |
 | `/monitoring/sensors/:id/edit`   | SensorFormComponent     |
 | `/monitoring/sensors/:id`        | SensorDetailComponent   |
-| `/monitoring/alerts`             | AlertListComponent      |
-| `/monitoring/alerts/resolved`    | AlertResolvedComponent  |
-| `/monitoring/subscription`       | SubscriptionViewComponent|
+
